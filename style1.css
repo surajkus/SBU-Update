@@ -72,7 +72,7 @@
     /* box-sizing: 30px; */
     margin: 5px;
     text-align: center;
-    height: 190px;
+    /* height: 190px; */
     gap:2px;
 
     width: 95%;
@@ -124,7 +124,7 @@
 }
 
 .submit_button {
-    margin-bottom: 2px;
+    margin-bottom: 10px !important;
 }
 
 .submit_button input {
