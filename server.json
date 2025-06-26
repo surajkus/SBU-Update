@@ -994,7 +994,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 185,
     "Name": "Dr. Archana Maurya",
@@ -1006,7 +1006,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 186,
     "Name": "Ms. Anjana Kumari Singh",
@@ -1018,8 +1018,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 187,
     "Name": "Dr. Vishwjit Verma",
     "Designation": "Assistant Professor",
@@ -1030,8 +1030,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 188,
     "Name": "Dr. Radha Madhab Jha",
     "Designation": "Assistant Professor",
@@ -1042,8 +1042,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 189,
     "Name": "Dr. Radha Madhab Jha",
     "Designation": "Assistant Professor",
@@ -1054,8 +1054,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 190,
     "Name": "Dr. Swatilekha Mahato",
     "Designation": "Assistant Professor",
@@ -1066,8 +1066,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 191,
     "Name": "Dr. Priyanka Mishra",
     "Designation": "Assistant Professor",
@@ -1078,8 +1078,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 192,
     "Name": "Dr. Samrat Banerjee",
     "Designation": "Assistant Professor",
@@ -1090,8 +1090,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 193,
     "Name": "Ms. Ishika Singh",
     "Designation": "Assistant Professor",
@@ -1102,8 +1102,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 194,
     "Name": "Mr. Dharmendra Kumar",
     "Designation": "Assistant Professor",
@@ -1114,19 +1114,20 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 195,
     "Name": "Mrs. Sweta Sinha",
-    "Designation": "Deputy Registrar (General Administration)
-  Assistant Professor","Department": "Department of Law","Phone_No": "Na",
+    "Designation": "Deputy Registrar (General Administration)Assistant Professor",
+    "Department": "Department of Law",
+    "Phone_No": "Na",
     "Email": "Na",
     "Building_Name": "Na",
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 196,
     "Name": "Dr. Raj Kumar Singh",
     "Designation": "Assistant Professor",
@@ -1137,8 +1138,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 197,
     "Name": "Dr. Puja Prerna",
     "Designation": "Assistant Professor",
@@ -1149,8 +1150,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 198,
     "Name": "Ms. Komal Gupta",
     "Designation": "Assistant Professor",
@@ -1161,8 +1162,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 199,
     "Name": "Mr. Rajeev Ranjan",
     "Designation": "Assistant Professor",
@@ -1173,8 +1174,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 200,
     "Name": "Mrs. Rashmi Sahay",
     "Designation": "Assistant Professor",
@@ -1185,8 +1186,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 201,
     "Name": "Dr. Alok Kumar",
     "Designation": "Assistant Professor",
@@ -1197,8 +1198,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 202,
     "Name": "Prof. (Dr.) Sailesh Narayan",
     "Designation": "DEAN (Pharmacy)Professor",
@@ -1209,8 +1210,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 203,
     "Name": "Prof. (Dr.)Shubhrajit Mantry",
     "Designation": "Professor",
@@ -1221,8 +1222,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 204,
     "Name": "Dr. Sabita Kumari",
     "Designation": "Assistant Professor",
@@ -1233,8 +1234,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 205,
     "Name": "Mr. Pawan Kumar Mahto",
     "Designation": "Assistant Professor",
@@ -1245,8 +1246,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 206,
     "Name": "Ms. Pallavi Rani",
     "Designation": "Assistant Professor",
@@ -1257,8 +1258,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 207,
     "Name": "Ms. Suruchi Gupta",
     "Designation": "Assistant Professor",
@@ -1269,8 +1270,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 208,
     "Name": "Mrs Nisha Kumari Singh",
     "Designation": "Assistant Professor",
@@ -1281,8 +1282,8 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
-{
+  },
+  {
     "Unique_id": 209,
     "Name": "Mr. Santosh Kumar",
     "Designation": "Assistant Professor",
@@ -1293,7 +1294,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 210,
     "Name": "Mrs Anjali Mishra",
@@ -1305,7 +1306,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 211,
     "Name": "Mr. Ajay Kumar",
@@ -1317,7 +1318,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 212,
     "Name": "Mr. Sudhir Kumar",
@@ -1329,7 +1330,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 213,
     "Name": "Dr. Nandini Sinha",
@@ -1341,7 +1342,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 214,
     "Name": "Mr. Sujit Sengupta",
@@ -1353,7 +1354,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 215,
     "Name": "Mr. Sparsh Upadhyay",
@@ -1365,7 +1366,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 216,
     "Name": "Mr. Chandra Shekhar Mahatha",
@@ -1377,7 +1378,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 217,
     "Name": "Dr. Sanjeev Srivastava",
@@ -1389,7 +1390,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 218,
     "Name": "Mrs. Namrata Singh",
@@ -1401,7 +1402,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 219,
     "Name": "Mr. Anand Kr. Vishwakarma",
@@ -1413,7 +1414,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 220,
     "Name": "Mr. Hemant Kumar Thakur",
@@ -1425,7 +1426,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 221,
     "Name": "Mr. Bikram Pratap Singh",
@@ -1437,7 +1438,7 @@
     "Room_no": "Na",
     "Floor": "Na",
     "Chamber": "Na"
-  }
+  },
   {
     "Unique_id": 222,
     "Name": "Dr. Ritesh Kumar",
