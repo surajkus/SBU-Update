@@ -62,7 +62,7 @@
 }
 
 .left {
-    margin: 10px;
+    margin: 5px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr)
@@ -72,7 +72,7 @@
     /* box-sizing: 30px; */
     margin: 5px;
     text-align: center;
-    height: auto;
+    height: 190px;
     gap:2px;
 
     width: 95%;
