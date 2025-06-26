@@ -10,7 +10,7 @@
 
 <body>
     <div id="container">
-        <input id="search_bar" type="search" placeholde="  Facilities search">
+        <input id="search_bar" type="search" placeholder="  Facilities search">
     </div>
 
 
@@ -18,52 +18,23 @@
 
     </div>
     <div class="Facility_boxes">
-        <div class="left">
-            <div class="box1">
-
-                <img class="left_img" src="/photo/canceller.jpg" alt=""><br>
-                <span>Sri B.k.Dalan</span>
-                <p1>Honorable pro-Chancellor</p1>
-                <p>Board of Management</p>
-                <br>
-                <div class="Submit_button">
-                    <input id="btn_text" type="button" value="know more">
-                </div>
-
-
-            </div>
-            <br>
-
-
-
-            <Br>
-
-        </div>
-
-
-
-        <div class="right">
-
+        <div class="left" id="Storage">
+           
+           
+        <!-- <div class="right">
             <div class="box2">
-
                 <img class="right_img" src="/photo/vc.jpg" alt=""><br>
                 <span> Dr.Jeganathan Chockalingam</sapn>
                     <h4>vice Chancellor</h4>
                     <p>Board of Management</p>
-
-
                     <br>
                     <div class="Submit_button">
                         <input id="btn_text" type="button" value="know more">
                     </div>
             </div>
-        </div>
-
-
-
-
+        </div> -->
     </div>
-
+<!-- 
     <p1> Engineering Department</p1>
     <div class="Eng_dean">
         <div class="Dean">
@@ -188,13 +159,46 @@
 
         </div>
         <br>
+-->
 
-
-    </div>
+    </div> 
 
 
     </div>
 
 </body>
+<script>
+   let Part = "";
+
+fetch('server.json')
+  .then(response => response.json())
+  .then(data => {
+    renderQuestions(data); // data is already an array
+    document.getElementById("Storage").innerHTML = Part; // move this inside
+  })
+  .catch(error => console.error('Error fetching the JSON:', error));
+
+function renderQuestions(data) {
+  for (const entry of data) {
+    Part += `
+      <div class='box1'>
+        <img class='left_img' src='img/${entry.Unique_id}.webp' alt=''>
+        <br>
+        <span>${entry.Name}</span>
+        <br>
+        <p1>${entry.Designation}</p1>
+        <br>
+        <p>${entry.Department}</p>
+        <br>
+        <div class='Submit_button'>
+            <a id='btn_text' href='profile.html?uno=${entry.Unique_id}'>Know more</a>
+          
+        </div>
+      </div>
+    `;
+  }
+}
+
+</script>
 
 </html>

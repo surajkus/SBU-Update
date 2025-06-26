@@ -9,19 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <div class="profile">
+<body id="pages">
+  
+
+
+
+
+</body>
+<script>
+  let Part = "";
+     let uno = window.location.href.split("?")[1].split("=")[1];
+fetch('server.json')
+  .then(response => response.json())
+  .then(data => {
+    renderQuestions(data); // data is already an array
+    document.getElementById("pages").innerHTML = Part; // move this inside
+  })
+  .catch(error => console.error('Error fetching the JSON:', error));
+
+function renderQuestions(data) {
+  for (const entry of data) {
+    if(entry.Unique_id==uno){
+        Part= `
+ <div class="profile">
         <div>
             <i id="icon" class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
 
-        <img id="img" src="images/mohta.jpg" alt="">
+        <img id="img" src="img/${entry.Unique_id}.webp" alt="">
 
         <div id="list">
 
-            <span>CA B.K. Dalan</span>
-            <h3>Pro-Chancellor</h3>
-            <h4>Department :- Board of Management </h4><br>
+            <span>${entry.Name}</span>
+            <h3>${entry.Designation}</h3>
+            <h4>${entry.Department} </h4><br>
         </div>
         <div class="details">
             <center>
@@ -29,27 +50,27 @@
                 <table>
                     <tr>
                         <td class="heading_tab">Phone:-</td>
-                        <td>7643069066</td>
+                        <td>${entry.Phone_No}</td>
                     </tr>
                     <tr>
                         <td class="heading_tab">Email:-</td>
-                        <td>bkdalan299@gamil.com</td>
+                        <td>${entry.Email}</td>
                     </tr>
                     <tr>
                         <td class="heading_tab">Buliding:-</td>
-                        <td>Academic Buidling</td>
+                        <td>${entry.Building_Name}</td>
                     </tr>
                     <tr>
                         <td class="heading_tab">Floor:-</td>
-                        <td>4th floor</td>
+                        <td>${entry.Floor}</td>
                     </tr>
                     <tr>
                         <td class="heading_tab">Room no:-</td>
-                        <td>209</td>
+                        <td>${entry.Room_no}</td>
                     </tr>
                      <tr>
                         <td class="heading_tab">Chamber no:-</td>
-                        <td>09</td>
+                        <td>${entry.Chamber}</td>
                     </tr>
 
 
@@ -64,8 +85,9 @@
     </div>
 
 
-
-
-</body>
-
+        `;
+    }
+  }
+}
+</script>
 </html>
