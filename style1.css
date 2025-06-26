@@ -25,7 +25,8 @@
     margin: 10px;
     height: 50px;
     border-radius: 4px;
-    background-color: rgb(14, 134, 174);
+        background-color: rgb(14, 134, 174);
+    
     /* background-color: antiquewhite; */
 
 }
@@ -72,7 +73,7 @@
     /* box-sizing: 30px; */
     margin: 5px;
     text-align: center;
-    /* height: 190px; */
+   
     gap:2px;
 
     width: 95%;
@@ -136,7 +137,6 @@ a{
 #btn_text {
     font-size: 10px;
     padding: 5px;
-    background-color: rgb(14, 134, 174);
     color: white;
 }
 
@@ -171,5 +171,104 @@ a{
 
     background-color: rgb(231, 235, 235);
     box-shadow: 4px 4px 4px rgb(190, 186, 186);
+
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(204, 207, 189);
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(36, 175, 235);
+  padding: 10px 15px;
+   box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(36, 175, 235);
+  color: #e8e2e2;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#menu-toggle {
+  display: none;
+ 
+}
+
+
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+
+}
+.close-btn {
+  font-size: 36px;
+    color: rgb(36, 35, 35);
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: -16px;
+    display: block;
+    position: relative;
+    bottom: 75px;
+    left: 10px;
+    color: bl;
+}
+
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar a:hover {
+  background-color: #333;
+}
+.menu{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom:10px;
+}
+.sidebar span{
+  font-size: 13px;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+.side-menu{
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
 
 }
