@@ -91,7 +91,7 @@ function renderQuestions(data) {
     }
     function search(){
         debugger;
-        let s_val = document.getElementById("search_bar").value;
+        let s_val = document.getElementById("search_bar").value.toLowerCase();
          if(s_val==""){
         initial_call();
         return;
