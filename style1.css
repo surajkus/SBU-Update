@@ -26,11 +26,15 @@
     height: 50px;
     border-radius: 4px;
        background-color: rgb(3, 76, 100);
+       padding-left: 10px;
     
     /* background-color: antiquewhite; */
 
 }
 
+#search_bar::placeholder{
+  padding-left: 10px;
+}
 #search_logo {
 
     width: 50px;
