@@ -2,12 +2,13 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0;
   font-family: sans-serif;
   background-color: rgb(204, 207, 189);
 }
@@ -16,6 +17,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  
   justify-content: space-between;
   background-color: rgb(3, 76, 100);
   padding: 10px 15px;
@@ -49,6 +51,7 @@ body {
 
 #menu-toggle {
   display: none;
+  
 
 }
 
@@ -59,24 +62,24 @@ body {
 }
 
 .close-btn {
-  font-size: 36px;
+  font-size: 38px;
   color: white;
   text-align: right;
   cursor: pointer;
   margin-bottom: -16px;
   display: block;
   position: relative;
-  bottom: 90px;
-  left: 10px;
+  bottom: 67px;
+  left: 12px;
 
 }
 
 #notification2_icon {
     color: white;
     position: relative;
-    top: 7px;
+    top: 6px;
     font-size: 20px;
-    left: 10px;
+    left: 6px;
 
 
 
@@ -116,8 +119,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  top: 4px;
-  left: 121px;
+  top: 2px;
+  left: 91px;
 }
 
 /* Our_Team*/
@@ -126,8 +129,7 @@ body {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f8fc;
-  margin: 0;
-  padding: 20px;
+   padding: 0px;
 }
 
 .team-container {
@@ -152,9 +154,15 @@ h1 {
   margin-bottom: 30px;
 }
 
+#Guider{
+  font-size: 14.5px;
+  padding: 1px;
+  margin: 20px;
+
+}
+
 .team-grid {
-  display: flex;
-  flex-wrap: wrap;
+
   justify-content: space-between;
   gap: 20px;
 }
@@ -207,15 +215,9 @@ h1 {
 
 
 /* Department */
+
+
 /* Feedback */
-
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f8fc;
-  margin: 0;
-  padding: 20px;
-}
 
 .feedback-container {
   max-width: 700px;
@@ -296,13 +298,6 @@ button:hover {
 
 
 /* Policy */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f8fc;
-  margin: 0;
-  padding: 20px;
-
-}
 
 .policy-container {
   max-width: 800px;
@@ -346,12 +341,7 @@ ul li {
 }
 
 /* About */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f8fc;
-  margin: 0;
-  padding: 20px;
-}
+
 
 .about-container {
   max-width: 900px;
