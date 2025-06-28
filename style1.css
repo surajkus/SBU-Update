@@ -197,6 +197,7 @@ body {
 .menu-icon {
   font-size: 26px;
   cursor: pointer;
+  color: white;
 }
 
 .title {
@@ -230,15 +231,32 @@ body {
 }
 .close-btn {
   font-size: 36px;
-    color: rgb(229, 226, 226);
+    color: white;
     text-align: right;
     cursor: pointer;
     margin-bottom: -16px;
     display: block;
     position: relative;
-    bottom: 75px;
+    bottom: 67px;
     left: 10px;
-    color: bl;
+    
+}
+#notification_icon{
+  color: white;
+  position: relative;
+      top: 5px;
+    font-size: 20px;
+
+
+}
+.side-menu {
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
+  left: 128px;
 }
 
 
@@ -263,15 +281,4 @@ body {
 .sidebar span{
   font-size: 13px;
   position: relative;
-  left: 10px;
-  bottom: 10px;
-}
-.side-menu{
-  color: white;
-  font-style: italic;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-  top: 4px;
-
-}
+  }
