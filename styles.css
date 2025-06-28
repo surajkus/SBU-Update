@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-      background-color: rgb(204, 207, 189);
+      
 }
 
 .profile {
@@ -76,4 +76,109 @@ tr {
   text-align: left;
   padding-left: 20px;
   font-size: 15px;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(204, 207, 189);
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   background-color: rgb(3, 76, 100);
+  padding: 10px 15px;
+   box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+ background-color: rgb(3, 76, 100);
+  color: #e8e2e2;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#menu-toggle {
+  display: none;
+ 
+}
+
+
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+
+}
+.close-btn {
+  font-size: 36px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: -16px;
+    display: block;
+    position: relative;
+    bottom: 67px;
+    left: 10px;
+    
+}
+#notification_icon{
+  color: white;
+  position: relative;
+      
+    font-size: 20px;
+
+
+}
+
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar a:hover {
+  background-color: #333;
+}
+.menu{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom:10px;
+}
+.sidebar span{
+  font-size: 13px;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+.side-menu{
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
+left: 128px;
 }

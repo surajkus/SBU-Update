@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="pages">
+  
 </body>
 <script>
   let Part = "";
@@ -26,6 +27,25 @@ function renderQuestions(data) {
         Part= `
  <div class="profile">
         <div>
+             <input type="checkbox" id="menu-toggle">
+    <div class="navbar">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="side-menu">Sbu Updates</div>
+        <a href="notification.html"><i id="notification_icon" class="fa fa-bell" aria-hidden="true"></i> </a>
+
+
+    </div>
+    <div class="sidebar">
+        <div class="menu">Sbu Updates</div>
+        <span>version 1.0.0</span>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+         <a href="index.html">Home</a>
+        <a href="About.html">Our Team</a>
+        <a href="Department.html">Department</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="Policy.html">Policy</a>
+        <a href="About.html">About</a>
+    </div>
     
             
             <a href="index.html"><i id="icon" class="fa fa-arrow-left" aria-hidden="true"></i></a>

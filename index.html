@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <link rel="stylesheet" href="style1.css?g=5">
 
@@ -13,16 +13,20 @@
   <div class="navbar">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="side-menu">Sbu Updates</div>
+    <a href="notification.html"><i id="notification_icon" class="fa fa-bell" aria-hidden="true"></i> </a>
+    
+
   </div>
   <div class="sidebar">
     <div class="menu">Sbu Updates</div>
-    <span>version 1.0</span>
+    <span>version 1.0.0</span>
     <label for="menu-toggle" class="close-btn">&times;</label>
-    <a href="#">Our Team</a>
-    <a href="#">Department</a>
-    <a href="#">Feedback</a>
-    <a href="#">Policy</a>
-    <a href="#">About</a>
+    <a href="Our_Team.html">Our Team</a>
+    <a href="Department.html">Department</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="notification.html">Notifications</a>
+    <a href="Policy.html">Policy</a>
+    <a href="About.html">About</a>
   </div>
     <div class="scontainer">
         <div id="container">
@@ -110,7 +114,7 @@ fetch('server.json')
 function renderSearch(data) {
   for (const entry of data) {
     
-        if(entry.Name.toLowerCase().includes(s_val) || entry.Designation.toLowerCase().includes(s_val) || entry.Department.toLowerCase().includes(s_val)){
+        if(entry.Name.toLowerCase().includes(s_val.trim()) || entry.Designation.toLowerCase().includes(s_val.trim()) || entry.Department.toLowerCase().includes(s_val.trim())){
         search_result += `
       <div class='box1'>
         <img class='left_img' src='img/${entry.Unique_id}.webp' alt=''>
