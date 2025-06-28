@@ -91,11 +91,13 @@ body {
    background-color: rgb(3, 76, 100);
   padding: 10px 15px;
    box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
-}
+   width: 100%;
+  }
 
 .menu-icon {
   font-size: 26px;
   cursor: pointer;
+  color: white;
 }
 
 .title {
@@ -128,21 +130,21 @@ body {
 
 }
 .close-btn {
-  font-size: 36px;
+  font-size: 40px;
     color: white;
     text-align: right;
     cursor: pointer;
     margin-bottom: -16px;
     display: block;
     position: relative;
-    bottom: 67px;
+    bottom: 95px;
     left: 10px;
     
 }
 #notification_icon{
   color: white;
   position: relative;
-      
+      top:-2px;
     font-size: 20px;
 
 
@@ -156,6 +158,7 @@ body {
   font-size: 18px;
   padding: 12px 0;
   border-bottom: 1px solid #333;
+  text-align: left;
 }
 
 .sidebar a:hover {
@@ -165,7 +168,7 @@ body {
   font-weight: bold;
   font-style: italic;
   font-size: 24px;
-  margin-bottom:10px;
+
 }
 .sidebar span{
   font-size: 13px;
@@ -179,6 +182,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  top: 4px;
-left: 128px;
+  top: 2px;
+  left: 91px;
 }
