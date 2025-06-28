@@ -21,6 +21,7 @@
     <div class="menu">Sbu Updates</div>
     <span>version 1.0.0</span>
     <label for="menu-toggle" class="close-btn">&times;</label>
+    <a href="index.html">Home</a>
     <a href="Our_Team.html">Our Team</a>
     <a href="Department.html">Department</a>
     <a href="Feedback.html">Feedback</a>
@@ -30,7 +31,7 @@
   </div>
     <div class="scontainer">
         <div id="container">
-        <input id="search_bar" type="search" placeholder="Facilities search" oninput="search()" >
+        <input id="search_bar" type="search" placeholder="Faculties search" oninput="search()" >
     </div>
     <div id="search_logo"><i class="fa fa-search" aria-hidden="true"></i></div>
     </div>
@@ -40,7 +41,7 @@
     </div>
     </div> 
     </div>
-</body>
+  </body>
 <script>
     function initial_call(){
    let Part = "<br><br><br>";
@@ -50,7 +51,7 @@ fetch('server.json')
   .then(response => response.json())
   .then(data => {
     renderQuestions(data); 
-    document.getElementById("Storage").innerHTML = Deans+"<br><h3 style='margin-top:20px; padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);'>Facuilty Members</h3>"+Part;
+    document.getElementById("Storage").innerHTML = Deans+"<br><h3 style='margin-top:20px; padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);'>Faculty Members</h3>"+Part;
   })
   .catch(error => console.error('Error fetching the JSON:', error));
 
