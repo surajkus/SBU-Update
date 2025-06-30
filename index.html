@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
 </head>
 <link rel="stylesheet" href="style1.css?g=5">
 
@@ -15,7 +15,7 @@
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="side-menu">Sbu Updates</div>
     <a href="notification.html"><i id="notification_icon" class="fa fa-bell" aria-hidden="true"></i> </a>
-    
+
 
   </div>
   <div class="sidebar">
@@ -30,55 +30,57 @@
     <a href="Policy.html">Policy</a>
     <a href="About.html">About</a>
   </div>
-    <div class="scontainer">
-        <div id="container">
-        <input id="search_bar" type="search" placeholder="Faculties search" oninput="search()" >
+  <div class="scontainer">
+    <div id="container">
+      <input id="search_bar" type="search" placeholder="Faculties search" oninput="search()">
     </div>
     <div id="search_logo"><i class="fa fa-search" aria-hidden="true"></i></div>
+  </div>
+  <h3 style="padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);">Deans</h3>
+  <div class="Facility_boxes">
+    <div class="left" id="Storage">
     </div>
-<h3 style="padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);">Deans</h3>
-    <div class="Facility_boxes">
-        <div class="left" id="Storage">
-    </div>
-    </div> 
-    </div>
-  </body>
+  </div>
+  </div>
+</body>
 <script>
-    function initial_call(){
-   let Part = "<br><br><br>";
-   let Deans = "";
+  function initial_call() {
+    let Part = "<br><br><br>";
+    let Deans = "";
 
-fetch('server.json')
-  .then(response => response.json())
-  .then(data => {
-    renderQuestions(data); 
-    document.getElementById("Storage").innerHTML = Deans+"<br><h3 style='margin-top:20px; padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);'>Faculty Members</h3>"+Part;
-  })
-  .catch(error => console.error('Error fetching the JSON:', error));
+    fetch('server.json')
+      .then(response => response.json())
+      .then(data => {
+        renderQuestions(data);
+        document.getElementById("Storage").innerHTML = Deans + "<br><h3 style='margin-top:20px; padding-left: 20px; text-decoration: underline; color: rgb(3, 76, 100);'>Faculty Members</h3>" + Part;
+      })
+      .catch(error => console.error('Error fetching the JSON:', error));
 
-function renderQuestions(data) {
-  for (const entry of data) {
-    if(entry.Designation.toLowerCase().includes("dean")){
-        Deans +=`
+    function renderQuestions(data) {
+      for (const entry of data) {
+        if (entry.Designation.toLowerCase().includes("dean")) {
+          Deans += `
       <div class='box1'>
         <div id="image">
           <img class='left_img' src='img/${entry.Unique_id}.webp' alt=''>
           </div>
         <br>
-        <span>${entry.Name}</span>
-        <br>
-        <p1>${entry.Designation}</p1>
-        <br>
-        <p>${entry.Department}</p>
-        <br>
-        <div class='submit_button'>
+        <div class="M">
+          <span>${entry.Name}</span>
+          <br>
+          <p1>${entry.Designation}</p1>
+          <br>
+          <p>${entry.Department}</p>
+          <br>
+          <div class='submit_button'>
             <a id='btn_text' href='profile.html?uno=${entry.Unique_id}'>Know more</a>
-          
-        </div>
-      </div>
-    `;
-    }
-    Part += `
+            
+            </div>
+            </div>
+          </div>
+            `;
+        }
+        Part += `
       <div class='box1'>
         <img class='left_img' src='img/${entry.Unique_id}.webp' alt=''>
         <br>
@@ -94,31 +96,31 @@ function renderQuestions(data) {
         </div>
       </div>
     `;
+      }
+    }
   }
-}
+  function search() {
+    let s_val = document.getElementById("search_bar").value.toLowerCase();
+    if (s_val == "") {
+      initial_call();
+      return;
     }
-    function search(){  
-        let s_val = document.getElementById("search_bar").value.toLowerCase();
-         if(s_val==""){
-        initial_call();
-        return;
-    }
-        let search_result = "";
-   let Deans = "";
+    let search_result = "";
+    let Deans = "";
 
-fetch('server.json')
-  .then(response => response.json())
-  .then(data => {
-    renderSearch(data); 
-    document.getElementById("Storage").innerHTML = search_result;
-  })
-  .catch(error => console.error('Error fetching the JSON:', error));
+    fetch('server.json')
+      .then(response => response.json())
+      .then(data => {
+        renderSearch(data);
+        document.getElementById("Storage").innerHTML = search_result;
+      })
+      .catch(error => console.error('Error fetching the JSON:', error));
 
-function renderSearch(data) {
-  for (const entry of data) {
-    
-        if(entry.Name.toLowerCase().includes(s_val.trim()) || entry.Designation.toLowerCase().includes(s_val.trim()) || entry.Department.toLowerCase().includes(s_val.trim())){
-        search_result += `
+    function renderSearch(data) {
+      for (const entry of data) {
+
+        if (entry.Name.toLowerCase().includes(s_val.trim()) || entry.Designation.toLowerCase().includes(s_val.trim()) || entry.Department.toLowerCase().includes(s_val.trim())) {
+          search_result += `
       <div class='box1'>
         <img class='left_img' src='img/${entry.Unique_id}.webp' alt=''>
         <br>
@@ -134,14 +136,16 @@ function renderSearch(data) {
         </div>
       </div>
     `;
-  }
+        }
+      }
+
+
+
     }
-        
-       
-    
-}}
-function checker(){
-   
-}
+  }
+  function checker() {
+
+  }
 </script>
+
 </html>

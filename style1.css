@@ -21,7 +21,7 @@
   justify-content: space-between;
 
   margin-top: 18px;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 #search_bar {
@@ -71,7 +71,7 @@
 .left_img {
   
   
-  width: 82%;
+  width: 77%;
   border-radius: 10px;
   height: 150px;
   margin-top: 10px;
@@ -115,6 +115,10 @@
   margin-top: 5px;
 }
 
+.M{
+position: relative;
+    bottom: 12px;
+}
 
 
 
