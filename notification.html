@@ -150,7 +150,28 @@
   top: 4px;
 left: 90px;
 }   
-    
+ 
+.notification-card {
+  background-color: #f0f4ff;
+  border-left: 5px solid #3366cc;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.notification-card .message {
+  margin: 0;
+  font-size: 16px;
+}
+
+.notification-card .time {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  font-size: 12px;
+  color: #777;
+}   
 </style>
 
 
@@ -185,37 +206,38 @@ left: 90px;
     <div class="container">
         <h1>Notifications</h1>
 
-        <section class="notification-section">
+        <section class="notification-section" id="notification">
 
-            <div class="notification-card">
-                <p class="message">update soon</p>
-                
-            </div>
-
+           
         </section>
-
-
-
-
     </div>
 </body>
 <script>
-   let set="";
+         let search_result = "";
+ 
 
-  fetch('notification.json')
-   .then(response=> response.json())
-   .then(data =>{
+fetch('notification.json')
+  .then(response => response.json())
+  .then(data => {
+    renderSearch(data); 
+    document.getElementById("notification").innerHTML = search_result;
+  })
+  .catch(error => console.error('Error fetching the JSON:', error));
 
-
-
-
-
-   })
-   .catch( error => console.error('Error fetching the Json;',error));
-   
-
-
-
+function renderSearch(data) {
+  for (const entry of data) {
+    
+       search_result += `
+      <div class="notification-card">
+        <p class="message">${entry.content}</p>
+        <span class="time">${entry.Date}</span>
+      </div>
+    `;
+  
+    }
+        
+       
+    
+}
 </script>
-
 </html>
