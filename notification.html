@@ -124,33 +124,31 @@
     border-bottom: 1px solid #333;
   }
 
-  .sidebar a:hover {
-    background-color: #333;
-  }
-
-  .menu {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .sidebar span {
-    font-size: 13px;
-    position: relative;
-    left: 10px;
-    bottom: 10px;
-  }
-
-  .side-menu {
-    color: white;
-    font-style: italic;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 152px;
-    margin-top: 8px;
-
-  }
+.sidebar a:hover {
+  background-color: #333;
+}
+.menu{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom:10px;
+}
+.sidebar span{
+  font-size: 13px;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+.side-menu{
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
+left: 90px;
+}   
+    
 </style>
 
 
@@ -185,37 +183,36 @@
   <div class="container">
     <h1>Notifications</h1>
 
-    <section class="notification-section">
+        <section class="notification-section">
 
-      <div class="notification-card">
-        <p class="message">update soon</p>
+            <div class="notification-card">
+                <p class="message">update soon</p>
+                
+            </div>
 
-      </div>
-
-    </section>
-
-
+        </section>
 
 
-  </div>
+
+
+    </div>
 </body>
 <script>
-  let set = "";
+   let set="";
 
   fetch('notification.json')
-    .then(response => response.json())
-    .then(data => {
+   .then(response=> response.json())
+   .then(data =>{
 
 
 
 
 
-    })
-    .catch(error => console.error('Error fetching the Json;', error));
-
+   })
+   .catch( error => console.error('Error fetching the Json;',error));
+   
 
 
 
 </script>
-
 </html>

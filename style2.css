@@ -73,6 +73,7 @@ body {
 
 }
 
+
 #notification_icon {
   color: white;
   position: relative;
@@ -263,7 +264,7 @@ textarea:focus {
 }
 
 button {
-  background-color: #2a4d8f;
+  background-color:green;
   color: #fff;
   border: none;
   padding: 12px 20px;
