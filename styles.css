@@ -47,12 +47,24 @@
   font-size: 15px;
 }
 
-#icon {
-  font-size: 30px;
-  color: rgb(11, 10, 10);
-  margin-right: 361px;
-  margin-left: 10px;
+#arrow1{
+  width: 10px;
+  height: 10px;
+
+
 }
+#icon {
+ 
+         font-size: 28px;
+    color: rgb(11, 10, 10);
+   
+    width: fit-content;
+    position: relative;
+    right: 181px;
+}
+
+  
+
 
 table {
   /* font-size: 30px; */
@@ -80,7 +92,7 @@ tr {
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: rgb(204, 207, 189);
+   background-color: rgb(208, 230, 245);
 }
 
 
@@ -88,11 +100,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   background-color: rgb(3, 76, 100);
+  background-color: rgb(3, 76, 100);
   padding: 10px 15px;
-   box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
-   
-  }
+  box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1);
+}
 
 .menu-icon {
   font-size: 26px;
@@ -111,7 +122,7 @@ body {
   left: -60%;
   width: 60%;
   height: 100%;
- background-color: rgb(3, 76, 100);
+  background-color: rgb(3, 76, 100);
   color: #e8e2e2;
   padding: 20px;
   box-sizing: border-box;
@@ -121,33 +132,44 @@ body {
 
 #menu-toggle {
   display: none;
- 
+
 }
 
 
-#menu-toggle:checked ~ .sidebar {
+#menu-toggle:checked~.sidebar {
   left: 0;
 
 }
+
 .close-btn {
-  font-size: 40px;
+     font-size: 40px;
     color: white;
     text-align: right;
     cursor: pointer;
     margin-bottom: -16px;
     display: block;
     position: relative;
-    bottom: 95px;
+    bottom: 106px;
     left: 10px;
-    
+
 }
-#notification_icon{
+
+#notification_icon {
   color: white;
   position: relative;
-      top:-2px;
-    font-size: 20px;
+  top: 5px;
+  font-size: 20px;
 
 
+}
+
+.side-menu {
+  color: white;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 152px;
+  margin-top: 8px;
 }
 
 
@@ -158,30 +180,20 @@ body {
   font-size: 18px;
   padding: 12px 0;
   border-bottom: 1px solid #333;
-  text-align: left;
 }
 
 .sidebar a:hover {
   background-color: #333;
 }
-.menu{
+
+.menu {
   font-weight: bold;
   font-style: italic;
   font-size: 24px;
-
+  margin-bottom: 10px;
 }
-.sidebar span{
+
+.sidebar span {
   font-size: 13px;
   position: relative;
-  left: 10px;
-  bottom: 10px;
-}
-.side-menu{
-  color: white;
-  font-style: italic;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-  top: 2px;
-  left:79px;
 }
