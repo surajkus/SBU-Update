@@ -2,101 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Notifications</title>
+  <title>Notifications</title>
 </head>
 <style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        margin: 0;
-        background-color: #f5f7fa;
-        color: #333;
-    }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+     background-color: #d1e3ef;
+    color: #333;
+  }
 
-    .container {
-        max-width: 600px;
-        margin: 40px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-    h1 {
-        text-align: center;
-        color: #003366;
-        margin-bottom: 30px;
-    }
+  h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+  }
 
-    .notification-section {
-        margin-bottom: 30px;
-    }
-
-
-    .notification-card {
-        background-color: #f0f4ff;
-        border-left: 5px solid #3366cc;
-        padding: 15px 20px;
-        margin: 10px 0;
-        border-radius: 8px;
-        position: relative;
-    }
-
- body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: rgb(204, 207, 189);
-}
+  .notification-section {
+    margin-bottom: 30px;
+  }
 
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-   background-color: rgb(3, 76, 100);
-  padding: 10px 15px;
-   box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
-}
-
-.menu-icon {
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -60%;
-  width: 60%;
-  height: 100%;
- background-color: rgb(3, 76, 100);
-  color: #e8e2e2;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: left 0.3s ease;
-  z-index: 1000;
-}
-
-#menu-toggle {
-  display: none;
- 
-}
+  .notification-card {
+    background-color: #f0f4ff;
+    border-left: 5px solid #3366cc;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    position: relative;
+  }
 
 
-#menu-toggle:checked ~ .sidebar {
-  left: 0;
 
-}
-.close-btn {
-  font-size: 36px;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(3, 76, 100);
+    padding: 10px 15px;
+    box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1);
+  }
+
+  .menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -60%;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(3, 76, 100);
+    color: #e8e2e2;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  #menu-toggle {
+    display: none;
+
+  }
+
+
+  #menu-toggle:checked~.sidebar {
+    left: 0;
+
+  }
+
+  .close-btn {
+    font-size: 36px;
     color: white;
     text-align: right;
     cursor: pointer;
@@ -105,26 +101,28 @@
     position: relative;
     bottom: 67px;
     left: 10px;
-    
-}
-#notification_icon{
-  color: white;
-  position: relative;
-      
+
+  }
+
+  #notification_icon {
+    color: white;
+    position: relative;
+
     font-size: 20px;
 
 
-}
+  }
 
 
-.sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 12px 0;
-  border-bottom: 1px solid #333;
-}
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 0;
+    text-align: justify;
+    border-bottom: 1px solid #333;
+  }
 
 .sidebar a:hover {
   background-color: #333;
@@ -150,28 +148,7 @@
   top: 4px;
 left: 90px;
 }   
- 
-.notification-card {
-  background-color: #f0f4ff;
-  border-left: 5px solid #3366cc;
-  padding: 15px 20px;
-  margin: 10px 0;
-  border-radius: 8px;
-  position: relative;
-}
-
-.notification-card .message {
-  margin: 0;
-  font-size: 16px;
-}
-
-.notification-card .time {
-  position: absolute;
-  right: 20px;
-  bottom: 15px;
-  font-size: 12px;
-  color: #777;
-}   
+    
 </style>
 
 
@@ -180,12 +157,12 @@ left: 90px;
 
 
 
-      <input type="checkbox" id="menu-toggle">
+  <input type="checkbox" id="menu-toggle">
   <div class="navbar">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="side-menu">Sbu Updates</div>
     <a href="notification.html"><i id="notification_icon" class="fa fa-bell" aria-hidden="true"></i> </a>
-    
+
 
   </div>
   <div class="sidebar">
@@ -203,41 +180,39 @@ left: 90px;
 
 
 
-    <div class="container">
-        <h1>Notifications</h1>
+  <div class="container">
+    <h1>Notifications</h1>
 
-        <section class="notification-section" id="notification">
+        <section class="notification-section">
 
-           
+            <div class="notification-card">
+                <p class="message">update soon</p>
+                
+            </div>
+
         </section>
+
+
+
+
     </div>
 </body>
 <script>
-         let search_result = "";
- 
+   let set="";
 
-fetch('notification.json')
-  .then(response => response.json())
-  .then(data => {
-    renderSearch(data); 
-    document.getElementById("notification").innerHTML = search_result;
-  })
-  .catch(error => console.error('Error fetching the JSON:', error));
+  fetch('notification.json')
+   .then(response=> response.json())
+   .then(data =>{
 
-function renderSearch(data) {
-  for (const entry of data) {
-    
-       search_result += `
-      <div class="notification-card">
-        <p class="message">${entry.content}</p>
-        <span class="time">${entry.Date}</span>
-      </div>
-    `;
-  
-    }
-        
-       
-    
-}
+
+
+
+
+   })
+   .catch( error => console.error('Error fetching the Json;',error));
+   
+
+
+
 </script>
 </html>

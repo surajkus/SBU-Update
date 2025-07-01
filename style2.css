@@ -8,21 +8,20 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0;
+  margin: 0;
   font-family: sans-serif;
-  background-color: rgb(204, 207, 189);
-  overflow: hidden;
+  /* background-color: rgb(204, 207, 189); */
+   background-color: #d1e3ef;
 }
 
 
 .navbar {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-   background-color: rgb(3, 76, 100);
+  background-color: rgb(3, 76, 100);
   padding: 10px 15px;
-   box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1); 
+  box-shadow: 0 1px 5px rgba(20, 160, 64, 0.1);
 }
 
 .menu-icon {
@@ -52,7 +51,6 @@ body {
 
 #menu-toggle {
   display: none;
-  
 
 }
 
@@ -63,7 +61,7 @@ body {
 }
 
 .close-btn {
-  font-size: 38px;
+  font-size: 36px;
   color: white;
   text-align: right;
   cursor: pointer;
@@ -76,15 +74,22 @@ body {
 }
 
 
-#notification2_icon {
-    color: white;
-    position: relative;
-    top: 5px;
-    font-size: 20px;
-    left: 5px;
+#notification_icon {
+  color: white;
+  position: relative;
+  top: 5px;
+  font-size: 20px;
 
 
+}
 
+.side-menu {
+  color: white;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 152px;
+  margin-top: 8px;
 }
 
 
@@ -111,18 +116,6 @@ body {
 .sidebar span {
   font-size: 13px;
   position: relative;
-  left: 10px;
-  bottom: 10px;
-}
-
-.side-menu {
-  color: white;
-  font-style: italic;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-  top: 2px;
-  left: 87px;
 }
 
 /* Our_Team*/
@@ -130,8 +123,8 @@ body {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f8fc;
-   padding: 0px;
+  background-color: #d1e3ef;
+  padding: 0px;
 }
 
 .team-container {
@@ -156,7 +149,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-#Guider{
+#Guider {
   font-size: 14.5px;
   padding: 1px;
   margin: 20px;
@@ -175,7 +168,7 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .team-member img {
@@ -291,7 +284,7 @@ button:hover {
   font-size: 14px;
   color: #888;
 }
- 
+
 
 
 
@@ -373,7 +366,8 @@ ul li {
   margin-bottom: 15px;
 }
 
-.section p, .section ul {
+.section p,
+.section ul {
   font-size: 16px;
   color: #444444;
   line-height: 1.6;
