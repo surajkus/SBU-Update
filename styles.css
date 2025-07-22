@@ -53,14 +53,13 @@
 
 
 }
-#icon {
+#icons {
  
-         font-size: 28px;
-    color: rgb(11, 10, 10);
-   
-    width: fit-content;
+       color: #000;
     position: relative;
-    right: 181px;
+    left: 10px;
+    top: 10px;
+    font-size: 28px;
 }
 
   
@@ -142,14 +141,14 @@ body {
 }
 
 .close-btn {
-     font-size: 40px;
+         font-size: 43px;
     color: white;
     text-align: right;
     cursor: pointer;
     margin-bottom: -16px;
     display: block;
     position: relative;
-    bottom: 106px;
+    bottom: 104px;
     left: 10px;
 
 }
@@ -180,6 +179,7 @@ body {
   font-size: 18px;
   padding: 12px 0;
   border-bottom: 1px solid #333;
+  text-align: left;
 }
 
 .sidebar a:hover {
