@@ -229,17 +229,19 @@ body {
 }
 
 .close-btn {
-  font-size: 36px;
-  color: white;
-  text-align: right;
-  cursor: pointer;
-  margin-bottom: -16px;
-  display: block;
-  position: relative;
-  bottom: 67px;
-  left: 10px;
-
+        font-size: 43px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: -16px;
+    display: block;
+    position: relative;
+    bottom: 77px;
+    left: 14px;
 }
+
+
+
 
 #notification_icon {
   color: white;
